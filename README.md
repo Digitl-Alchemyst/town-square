@@ -1,41 +1,33 @@
 <h1><ul><b>
-Next.js 13.5 BoilerPlate Base
+Town Square
 </b></ul></h1>
 
-Basic boilerplate for Next.js projects using Typescript, Tailwind; with testing features from Jest & React Testing Library & Commit Linting with Lint-Staged & Huksy
-
+Town Square is a sophisticated community application designed to serve as a cutting-edge forum for constructive discourse. It acts as a catalyst for meaningful dialogues on various societal issues and political matters, fostering an atmosphere of open exchange and intellectual engagement. Much more than a mere platform, Town Square stands at the intersection of innovation and community-driven focus, offering a unique blend of features inspired by the best elements of Twitter and other leading discussion platforms.
 <br>
 
 <h2><ul><b>Features</b></ul></h2>
 
 <h4>
-    Testing<br>
-        => Jest <br>
-        => React Testing Library <br>
-    Commits<br>
-        => Husky <br>
-        => Lint-Staged <br>
-    Imports<br>
-        => @ = ./src <br>
-        => @/c = ./src/components <br>
-        => @/h = ./src/hooks <br>
-        => @/l = ./src/lib <br>
-        => @/s = ./src/styles <br>
-        => @/u = ./src/util <br>
-        => # = ./ <br>
-        => ! = ./public <br>
-        => $ = ./schemas <br>
-
+    Bulletin Board<br>
+        => Post Feed <br>
+    Post<br>
+        => Tweets Threads Post <br>
+    Town Hall<br>
+        => Open Forum Voice Chat (Twitter Spaces) <br>
 </h4>
 
 <h3><ul><b>Project State</b></ul></h3>
 
-Project version updated for Next.js 13.5.3 [This project will be maintained to remain current with Next.js @latest until otherwise noted.] This is ready to use in its current state This project is set up with Jest and React Testing Library for code testing, it has been configured to work with Typescript. Custom imports have been set up. Eslint settings are preconfigured using a moderately strict ruleset. Uses ESLint to parse to Typescript. Sets specific rules for for testing envrioment (files within the **tests** directory or files with names ending in .spec.js, .test.js, .ts, .jsx, or .tsx). Configured Import Resolver to handle custom import settings. Uses Lint-Staged & Husky to Lint & format with prettier all files before commiting updates.<br> <br>
+At Town Square, we believe in the power of dialogue to drive global and local change. Our platform is meticulously crafted to facilitate in-depth conversations that inspire positive transformation and build a better world. By providing a robust space for diverse perspectives to converge, we encourage individuals from all walks of life to share their thoughts, experiences, and ideas. This inclusive approach ensures that voices are not just heard, but also valued, fostering a sense of belonging and unity among community members.<br> <br>
 
-<h3>🚀 Tailwind CSS Extensions</h3><br>
-🌈 Neon Shadows <br>
-🌀 Slower Spin Animation <br>
-🙈 Scrollbar Hide <br>
+<h3>🚀 Key Features:</h3><br>
+<h4>Open Forum for Constructive Dialogue:</h4><br>
+Town Square serves as a hub where intellectuals, thought leaders, and concerned citizens converge to discuss pressing issues facing our world today. It provides a space where users can delve into topics ranging from global politics to local community initiatives, promoting dialogue that is insightful, respectful, and constructive.<br>
+<h4>Global and Local Impact:</h4><br>
+By bridging the gap between global perspectives and local insights, Town Square becomes a breeding ground for ideas that can effect real change. Users can engage in discussions that pertain specifically to their communities while also participating in broader global conversations, ensuring that the exchange of ideas transcends geographical boundaries.<br>
+<h4>Building a Better World:</h4><br>
+Town Square is more than just a forum; it's a movement dedicated to building a more compassionate, informed, and harmonious world. Through collaborative discussions, we aim to empower individuals to take meaningful action in their communities, fostering positive change from the ground up.<br>
+
 
 
 <h3><ul><b>How to use</b></ul></h3>
