@@ -8,7 +8,7 @@ const LogoLink = () => {
       {' '}
       <Link href='./' className='flex items-center'>
         <Image src='/Logo.png' alt='Logo with Name' width={60} height={60} />
-        <h1 className='text-6xl ml-2 font-bold text-slate-100'>Town Square</h1>
+        <h1 className='ml-2 text-6xl font-bold text-slate-100'>Town Square</h1>
       </Link>
     </div>
   );

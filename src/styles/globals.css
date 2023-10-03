@@ -20,7 +20,7 @@
 
   /* No Result */
   .no-result {
-    @apply text-center !text-base-regular text-light-3;
+    @apply !text-base-regular text-center text-light-3;
   }
 
   /* Community Card */
@@ -29,7 +29,7 @@
   }
 
   .community-card_btn {
-    @apply rounded-lg bg-primary-500 px-5 py-1.5 text-small-regular !text-light-1 !important;
+    @apply text-small-regular rounded-lg bg-primary-500 px-5 py-1.5 !text-light-1 !important;
   }
 
   /* thread card  */
@@ -55,7 +55,7 @@
   }
 
   .searchbar_input {
-    @apply border-none bg-dark-3 text-base-regular text-light-4 outline-none !important;
+    @apply text-base-regular border-none bg-dark-3 text-light-4 outline-none !important;
   }
 
   .topbar {

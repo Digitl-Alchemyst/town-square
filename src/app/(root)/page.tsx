@@ -1,6 +1,5 @@
-import LSide from "@/c/global/LSide";
-import RSide from "@/c/global/RSide";
-
+import LSide from '@/c/global/LSide';
+import RSide from '@/c/global/RSide';
 
 const Home: React.FC = (): JSX.Element => {
   return (
