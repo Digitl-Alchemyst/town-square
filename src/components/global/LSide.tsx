@@ -5,10 +5,12 @@ import {
   FaEnvelopeOpenText,
   FaClipboardList,
   FaBell,
+  FaMoneyBill,
 } from 'react-icons/fa';
 import { MdPerson, MdBookmarks, MdPeople } from 'react-icons/md';
 import { LiaSearchSolid } from 'react-icons/lia';
 import { AiFillNotification } from 'react-icons/ai';
+import { LuVote } from 'react-icons/lu';
 import { BsShieldFillCheck, BsThreeDots } from 'react-icons/bs';
 import Image from 'next/image';
 
@@ -39,6 +41,11 @@ const navItems = [
     link: 'communities',
   },
   {
+    title: 'Vote',
+    icon: LuVote,
+    link: 'vote',
+  },
+  {
     title: 'List',
     icon: FaClipboardList,
     link: 'list',
@@ -49,9 +56,14 @@ const navItems = [
     link: 'bookmarks',
   },
   {
-    title: 'Premium',
+    title: 'Verified',
     icon: BsShieldFillCheck,
-    link: 'premium',
+    link: 'verified',
+  },
+  {
+    title: 'Monetize',
+    icon: FaMoneyBill,
+    link: 'monetize',
   },
   {
     title: 'Profile',
@@ -79,7 +91,7 @@ const LSide = () => {
             href={`/${item.link}`}
             key={item.title}
           >
-            <div className='flex w-auto items-center justify-center gap-x-2 rounded-xl px-3 py-4 text-slate-300 transition duration-200 hover:bg-slate-800/50'>
+            <div className='flex w-auto items-center justify-center gap-x-4 rounded-xl px-3 py-4 text-slate-300 transition duration-200 hover:bg-slate-800/50'>
               <div>
                 <item.icon className='h-6 w-6' />
               </div>
@@ -87,13 +99,13 @@ const LSide = () => {
             </div>
           </Link>
         ))}
-        <button className='mt-10 w-full rounded-3xl border border-tsl/60 bg-tsd px-6 py-4 text-center text-xl font-bold transition duration-200 hover:border-tsl/40 hover:bg-opacity-60'>
-          <div className='flex items-center justify-center gap-x-3'>
+        <button className='mt-10 w-full rounded-3xl border border-tsl/60 bg-tsd px-6 py-4 text-center text-xl font-bold transition duration-200 hover:border-tsl/40 hover:bg-opacity-60 hover:text-slate-400'>
+          <div className='flex items-center justify-center gap-x-3 font-medium'>
             <AiFillNotification className='h-7 w-7' /> Post Bulletin
           </div>
         </button>
       </div>
-      <div className='mb-6 flex w-full items-center justify-center space-x-3 rounded-3xl border border-tsd/30 bg-tsd/20 px-4 py-2 text-center font-bold transition duration-200 hover:border-tsd/10 hover:bg-tsd/10'>
+      <div className='mb-6 flex w-full items-center justify-center space-x-3 rounded-3xl border border-tsd/30 bg-tsd/20 px-4 py-2 text-center font-bold transition duration-300 hover:border-tsd/10 hover:bg-tsd/10 hover:text-slate-400'>
         <div className='h-10 w-10 rounded-full'>
           <Image
             src='/DAS.png'
@@ -103,7 +115,7 @@ const LSide = () => {
             className='w-full'
           />
         </div>
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center '>
           <div className='text-ellipsis text-sm font-light'>
             Digitl Alchemyst
           </div>
