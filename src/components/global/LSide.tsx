@@ -1,9 +1,122 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import {
+  FaCity,
+  FaEnvelopeOpenText,
+  FaClipboardList,
+  FaBell,
+} from 'react-icons/fa';
+import { MdPerson, MdBookmarks, MdPeople } from 'react-icons/md';
+import { LiaSearchSolid } from 'react-icons/lia';
+import { AiFillNotification } from 'react-icons/ai';
+import { BsShieldFillCheck, BsThreeDots } from 'react-icons/bs';
+import Image from 'next/image';
+
+const navItems = [
+  {
+    title: 'Home',
+    icon: FaCity,
+    link: '',
+  },
+  {
+    title: 'Discover',
+    icon: LiaSearchSolid,
+    link: 'discover',
+  },
+  {
+    title: 'Notifications',
+    icon: FaBell,
+    link: 'notifications',
+  },
+  {
+    title: 'Messages',
+    icon: FaEnvelopeOpenText,
+    link: 'messages',
+  },
+  {
+    title: 'Communities',
+    icon: MdPeople,
+    link: 'communities',
+  },
+  {
+    title: 'List',
+    icon: FaClipboardList,
+    link: 'list',
+  },
+  {
+    title: 'Bookmarks',
+    icon: MdBookmarks,
+    link: 'bookmarks',
+  },
+  {
+    title: 'Premium',
+    icon: BsShieldFillCheck,
+    link: 'premium',
+  },
+  {
+    title: 'Profile',
+    icon: MdPerson,
+    link: 'username',
+  },
+];
 
 const LSide = () => {
   return (
-    <div>LSide</div>
-  )
-}
+    <section className='fixed mt-3 flex h-screen w-60 flex-col items-stretch justify-between'>
+      <div className=''>
+        <Link href='/'>
+          <Image
+            src='/Logo.png'
+            alt='Town Square Logo'
+            width={35}
+            height={35}
+            className='mb-2 ml-2'
+          />
+        </Link>
+        {navItems.map((item) => (
+          <Link
+            className='flex items-center justify-start space-y-1'
+            href={`/${item.link}`}
+            key={item.title}
+          >
+            <div className='flex w-auto items-center justify-center gap-x-2 rounded-xl px-3 py-4 text-slate-300 transition duration-200 hover:bg-slate-800/50'>
+              <div>
+                <item.icon className='h-6 w-6' />
+              </div>
+              <div className='text-lg'>{item.title}</div>
+            </div>
+          </Link>
+        ))}
+        <button className='mt-10 w-full rounded-3xl border border-tsl/60 bg-tsd px-6 py-4 text-center text-xl font-bold transition duration-200 hover:border-tsl/40 hover:bg-opacity-60'>
+          <div className='flex items-center justify-center gap-x-3'>
+            <AiFillNotification className='h-7 w-7' /> Post Bulletin
+          </div>
+        </button>
+      </div>
+      <div className='mb-6 flex w-full items-center justify-center space-x-3 rounded-3xl border border-tsd/30 bg-tsd/20 px-4 py-2 text-center font-bold transition duration-200 hover:border-tsd/10 hover:bg-tsd/10'>
+        <div className='h-10 w-10 rounded-full'>
+          <Image
+            src='/DAS.png'
+            alt='Profile Image'
+            width={100}
+            height={100}
+            className='w-full'
+          />
+        </div>
+        <div className='flex flex-col items-center justify-center'>
+          <div className='text-ellipsis text-sm font-light'>
+            Digitl Alchemyst
+          </div>
+          <div className='text-ellipsis text-xs font-thin'>
+            @DigitalAlchemyst
+          </div>
+        </div>
+        <button>
+          <BsThreeDots />
+        </button>
+      </div>
+    </section>
+  );
+};
 
-export default LSide
+export default LSide;

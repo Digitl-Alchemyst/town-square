@@ -2,8 +2,7 @@
 Town Square
 </b></ul></h1>
 
-Town Square is a sophisticated community application designed to serve as a cutting-edge forum for constructive discourse. It acts as a catalyst for meaningful dialogues on various societal issues and political matters, fostering an atmosphere of open exchange and intellectual engagement. Much more than a mere platform, Town Square stands at the intersection of innovation and community-driven focus, offering a unique blend of features inspired by the best elements of Twitter and other leading discussion platforms.
-<br>
+Town Square is a sophisticated community application designed to serve as a cutting-edge forum for constructive discourse. It acts as a catalyst for meaningful dialogues on various societal issues and political matters, fostering an atmosphere of open exchange and intellectual engagement. Much more than a mere platform, Town Square stands at the intersection of innovation and community-driven focus, offering a unique blend of features inspired by the best elements of Twitter and other leading discussion platforms. <br>
 
 <h2><ul><b>Features</b></ul></h2>
 
@@ -27,8 +26,6 @@ Town Square serves as a hub where intellectuals, thought leaders, and concerned 
 By bridging the gap between global perspectives and local insights, Town Square becomes a breeding ground for ideas that can effect real change. Users can engage in discussions that pertain specifically to their communities while also participating in broader global conversations, ensuring that the exchange of ideas transcends geographical boundaries.<br>
 <h4>Building a Better World:</h4><br>
 Town Square is more than just a forum; it's a movement dedicated to building a more compassionate, informed, and harmonious world. Through collaborative discussions, we aim to empower individuals to take meaningful action in their communities, fostering positive change from the ground up.<br>
-
-
 
 <h3><ul><b>How to use</b></ul></h3>
 
