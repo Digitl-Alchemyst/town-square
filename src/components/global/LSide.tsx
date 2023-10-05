@@ -99,7 +99,7 @@ const LSide = () => {
             </div>
           </Link>
         ))}
-        <button className='mt-10 w-full rounded-3xl border border-tsl/60 bg-tsd px-6 py-4 text-center text-xl font-bold transition duration-200 hover:border-tsl/40 hover:bg-opacity-60 hover:text-slate-400'>
+        <button className='mt-10  rounded-full border border-tsl/60 bg-tsd px-4 py-3 text-center text-xl font-bold transition duration-200 hover:border-tsl/40 hover:bg-opacity-60 hover:text-slate-400'>
           <div className='flex items-center justify-center gap-x-3 font-medium'>
             <AiFillNotification className='h-7 w-7' /> Post Bulletin
           </div>
