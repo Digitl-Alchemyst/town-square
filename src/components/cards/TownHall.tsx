@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { BsThreeDots } from 'react-icons/bs';
-
 
 
 const TownHall = () => {
@@ -11,7 +9,7 @@ const TownHall = () => {
 
       {/* Active Town Hall Meetings  */}
       <div className='mb-6 flex w-80 items-center justify-between space-x-3 border-b-[0.5px] border-slate-400/40 text-center font-bold'>
-        <div className='mb-1 flex items-center space-x-2'>
+        <div className='mb-2 flex items-center space-x-2'>
           <div className='h-13 w-13 rounded-full'>
             <Image
               src='/DAS.png'
@@ -34,7 +32,7 @@ const TownHall = () => {
       </div>
       {/* Active Town Hall Meetings  */}
       <div className='mb-6 flex w-80 items-center justify-between space-x-3 border-b-[0.5px] border-slate-400/40 text-center font-bold'>
-        <div className='mb-1 flex items-center space-x-2'>
+        <div className='mb-2 flex items-center space-x-2'>
           <div className='h-13 w-13 rounded-full'>
             <Image
               src='/untele.png'
@@ -57,7 +55,7 @@ const TownHall = () => {
       </div>
       {/* Active Town Hall Meetings  */}
       <div className='mb-6 flex w-80 items-center justify-between space-x-3 border-b-[0.5px] border-slate-400/40 text-center font-bold'>
-        <div className='mb-1 flex items-center space-x-2'>
+        <div className='mb-2 flex items-center space-x-2'>
           <div className='h-13 w-13 rounded-full'>
             <Image
               src='/wallstape.jpg'

@@ -1,8 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import { BsDot, BsShareFill } from 'react-icons/bs';
-import { FaCommentDots, FaRegHeart, FaRegStar, FaRetweet } from 'react-icons/fa';
-import { GiShatteredHeart } from 'react-icons/gi'
+import { BsDot, BsShareFill, BsThreeDots } from 'react-icons/bs';
+import {
+  FaCommentDots,
+  FaRegHeart,
+  FaRegStar,
+  FaRetweet,
+} from 'react-icons/fa';
+import { GiShatteredHeart } from 'react-icons/gi';
 import { ImStatsBars } from 'react-icons/im';
 
 const BulletinCard = () => {
@@ -25,21 +30,24 @@ const BulletinCard = () => {
             </div>
           </div>
           <div className='space-y-4'>
-            <div className='flex items-center space-x-2'>
-              <div className='text-lg font-bold text-slate-200'>
-                Digital Alchemyst
+            <div className='flex items-center justify-between '>
+              <div className='flex items-center space-x-2'>
+                <div className='text-lg font-bold text-slate-200'>
+                  Digital Alchemyst
+                </div>
+                <div className='text-sm font-light text-slate-400'>
+                  @digitalalchemyst
+                </div>
+                <div className='font-bold text-slate-400 '>
+                  <BsDot className='h-6 w-6' />
+                </div>
+                <div className='font-base text-sm text-slate-400'>
+                  Oct 4th, 2023
+                </div>
               </div>
-              <div className='text-sm font-light text-slate-400'>
-                @digitalalchemyst
-              </div>
-              <div className='font-bold text-slate-400 '>
-                <BsDot className='h-6 w-6' />
-              </div>
-              <div className='font-base text-sm text-slate-400'>
-                Oct 4th, 2023
-              </div>
+              <BsThreeDots className='mr-2 h-5 text-slate-200 w-5'/>
             </div>
-            <div className=' text-slate-200'>
+            <div className=' text-slate-200 text-md font-light'>
               🌍✨ Exciting News! Introducing Town Square, where meaningful
               conversations meet global impact. 🗣️ Join us in shaping a better
               world through open dialogue and community-driven change. Let your
@@ -58,33 +66,33 @@ const BulletinCard = () => {
             </div>
 
             {/* Action Icons */}
-            <div className='flex justify-between items-center py-2 px-4 text-slate-400'>
+            <div className='flex items-center justify-between px-4 py-2 text-slate-400'>
               {/* Comment  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <FaCommentDots />
               </div>
               {/* Repost  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <FaRetweet />
               </div>
               {/* Like  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <FaRegHeart />
               </div>
               {/* Dislike  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <GiShatteredHeart />
               </div>
               {/* Star  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <FaRegStar />
               </div>
               {/* Share  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <BsShareFill />
               </div>
               {/* Stats  */}
-              <div className='text-slate-400 hover:text-tsl cursor-pointer'>
+              <div className='cursor-pointer text-slate-400 hover:text-tsl'>
                 <ImStatsBars />
               </div>
             </div>

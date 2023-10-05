@@ -19,7 +19,7 @@ const Trending = () => {
               <div className='font-bold text-slate-400 '>
                 <BsDot className='h-6 w-6' />
               </div>
-              <div className='mr-2 rounded bg-tsd px-2 py-1 text-sm font-semibold text-white'>
+              <div className='mr-2 rounded bg-tsl/60 px-2 py-1 text-sm font-semibold text-slate-300'>
                 LIVE
               </div>
             </div>
