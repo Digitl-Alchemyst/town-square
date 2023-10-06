@@ -24,7 +24,7 @@ const RSide = () => {
           </label>
 
 
-        <div className='absolute z-0 mt-18 space-y-4'>
+        <div className='fixed overflow-scroll z-0 mt-18 space-y-4 scrollbar-hide'>
           {/* Sections  */}
           <Premium />
           <Trending />

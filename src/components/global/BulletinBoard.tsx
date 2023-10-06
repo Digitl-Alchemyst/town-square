@@ -10,11 +10,13 @@ import { MdAddLocationAlt } from 'react-icons/md';
 
 const BulletinBoard = () => {
   return (
-    <main className='ml-[260px] flex h-full min-h-screen w-146 flex-col border-l-[0.5px] border-r-[0.5px] border-slate-400/40 px-3 pt-3'>
-      <h1 className='text-xl font-bold backdrop-blur sticky top-0 bg-slate-900/40 mr-2 w-full'>Home</h1>
+    <main className='ml-[260px] flex h-full min-h-screen w-146 flex-col border-l-[0.5px] border-r-[0.5px] border-slate-400/40 px-3 '>
+      <h1 className='sticky top-0 mr-2 w-full bg-slate-900/40 pt-3 text-xl font-bold backdrop-blur'>
+        Home
+      </h1>
       {/* Feed  */}
-      <div className='flex items-center justify-between mt-2'>
-        <div className=' flex h-full w-full flex-1 items-center  justify-center px-8 py-2 hover:bg-slate-950/80 border-b-2 border-tsd'>
+      <div className='mt-2 flex items-center justify-between'>
+        <div className=' flex h-full w-full flex-1 items-center  justify-center border-b-2 border-tsl/70 px-8 py-2 hover:bg-slate-950/80'>
           Global
         </div>
         <div className=' flex h-full w-full flex-1 items-center  justify-center px-8 py-2 hover:bg-slate-950/80'>
@@ -47,27 +49,27 @@ const BulletinBoard = () => {
             <div className='flex flex-1 items-center justify-between px-4 py-2 text-slate-400'>
               {/* Media  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <GoFileMedia className='h-5 w-5'/>
+                <GoFileMedia className='h-5 w-5' />
               </div>
               {/* Gif  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <RiFileGifFill className='h-5 w-5'/>
+                <RiFileGifFill className='h-5 w-5' />
               </div>
               {/* Emoji  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <RiEmojiStickerLine className='h-5 w-5'/>
+                <RiEmojiStickerLine className='h-5 w-5' />
               </div>
               {/* Poll  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <CgPoll className='h-5 w-5'/>
+                <CgPoll className='h-5 w-5' />
               </div>
               {/* Schedule  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <AiOutlineSchedule className='h-5 w-5'/>
+                <AiOutlineSchedule className='h-5 w-5' />
               </div>
               {/* Location  */}
               <div className='flex-1 cursor-pointer text-slate-400 hover:text-tsl'>
-                <MdAddLocationAlt className='h-5 w-5'/>
+                <MdAddLocationAlt className='h-5 w-5' />
               </div>
             </div>
             {/* Post Button  */}

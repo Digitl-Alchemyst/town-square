@@ -4,15 +4,15 @@ import { BsDot } from 'react-icons/bs';
 
 const Trending = () => {
   return (
-    <div className='h-full space-y-3 rounded-lg border border-slate-400/40 p-2'>
-      <h2 className='text-lg font-bold text-slate-300'>
+    <div className='h-full space-y-3 rounded-lg border border-slate-400/40'>
+      <h2 className='text-lg font-bold text-slate-300 py-1 px-2'>
         What&apos;s trending today?
       </h2>
 
       {/* Card Container */}
-      <div className='space-y-3'>
+      <div className=''>
         {/* Live Event Card  */}
-        <div className='mb-4 flex items-center justify-between'>
+        <div className='p-2 flex items-center justify-between hover:bg-slate-800/80 transition duration-200 hover:cursor-pointer'>
           <div className=''>
             <div className='flex items-center justify-start'>
               <div className='text-slate-400'>Event</div>
@@ -38,7 +38,7 @@ const Trending = () => {
         </div>
 
         {/*  Trending Card  */}
-        <div>
+        <div className='hover:bg-slate-800/80 transition duration-200 hover:cursor-pointer p-2'>
           <div>
             <div className='flex justify-between'>
               <div className='flex'>
@@ -55,7 +55,7 @@ const Trending = () => {
           </div>
         </div>
         {/*  Trending Card  */}
-        <div>
+        <div className='hover:bg-slate-800/80 transition duration-200 hover:cursor-pointer p-2'>
           <div>
             <div className='flex justify-between'>
               <div className='flex'>
@@ -72,7 +72,7 @@ const Trending = () => {
           </div>
         </div>
         {/*  Trending Card  */}
-        <div>
+        <div className='hover:bg-slate-800/80 transition duration-200 hover:cursor-pointer p-2'>
           <div>
             <div className='flex justify-between'>
               <div className='flex'>
@@ -89,7 +89,7 @@ const Trending = () => {
           </div>
         </div>
 
-        <div className='text-tsd hover:text-tsl font-semibold text-lg '>Show More</div>
+        <div className='text-tsl/60 hover:text-tsl hover:bg-slate-800/80 transition duration-200 font-semibold text-md p-2 hover:cursor-pointer'>Show More</div>
       </div>
     </div>
   );
