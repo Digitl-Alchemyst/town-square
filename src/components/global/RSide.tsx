@@ -9,20 +9,22 @@ const RSide = () => {
     <section className='ml-4'>
       <div className='relative'>
         {/* Search Bar  */}
-        <label
-          htmlFor='searchBox'
-          className='absolute top-0 flex flex-1 gap-4 rounded-md bg-slate-900/80 py-2'
-        >
-          <input
-            id='seachBox'
-            type='text'
-            placeholder='Search...'
-            className='flex-grow rounded-full border-2 border-slate-700 bg-slate-800/80 px-5 py-2 text-slate-200 shadow-md focus:outline-none focus:ring-1 focus:ring-sky-400'
-          />
-          <PiMagnifyingGlassBold className=' hidden h-11 w-11 rotate-90 cursor-pointer rounded-full bg-slate-800 p-2 font-bold text-slate-500 md:inline-flex' />
-        </label>
 
-        <div className='absolute mt-18 space-y-4'>
+          <label
+            htmlFor='searchBox'
+            className='fixed top-0 z-10 flex flex-1 gap-4 bg-slate-900/80 py-2 backdrop-blur justify-between'
+          >
+            <input
+              id='seachBox'
+              type='text'
+              placeholder='Search...'
+              className='flex-grow rounded-full border-2 border-slate-700 bg-slate-800/80 px-5 py-2 text-slate-200 shadow-md focus:outline-none focus:ring-1 focus:ring-tsl'
+            />
+            <PiMagnifyingGlassBold className=' hidden h-11 w-11 rotate-90 cursor-pointer rounded-full bg-slate-800 p-2 font-bold text-slate-500 md:inline-flex ml-4' />
+          </label>
+
+
+        <div className='absolute z-0 mt-18 space-y-4'>
           {/* Sections  */}
           <Premium />
           <Trending />
